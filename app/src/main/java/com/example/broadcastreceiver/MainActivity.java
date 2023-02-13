@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
-import android.widget.Switch;
 
 import com.example.broadcastreceiver.databinding.ActivityMainBinding;
 
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (binding.dropDownText.getText().toString()){
                     case "Custom broadcast receiver":
-                        //startActivity(new Intent(MainActivity.this,BatteryBroadcastReceiver.class));
+                        startActivity(new Intent(MainActivity.this, CustomBroadSender.class));
                         break;
                     case "Wifi RTT state change receiver":
                         startActivity(new Intent(MainActivity.this,WifiRttStateChangeReceiver.class));
