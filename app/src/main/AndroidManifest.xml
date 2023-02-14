@@ -35,6 +35,10 @@
                 <action android:name="com.example.MY_CUSTOM_ACTION" />
             </intent-filter>
         </receiver>
+        <service
+            android:name=".MyService"
+            android:exported="false" />
+
 
         <activity
             android:name=".BatteryBroadcastReceiver"
